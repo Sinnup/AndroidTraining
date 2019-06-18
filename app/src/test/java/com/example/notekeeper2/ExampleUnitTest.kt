@@ -23,7 +23,7 @@ class ExampleUnitTest {
 
     }
 
-    @Testg
+    @Test
     fun dataManager_ContainsData() {
         System.out.println("dataManager_ContainsData")
         val dataManager = DataManager()
