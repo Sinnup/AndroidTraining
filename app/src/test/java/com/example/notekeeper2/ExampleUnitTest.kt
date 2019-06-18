@@ -23,8 +23,9 @@ class ExampleUnitTest {
 
     }
 
-    @Test
+    @Testg
     fun dataManager_ContainsData() {
+        System.out.println("dataManager_ContainsData")
         val dataManager = DataManager()
         assertNotNull(dataManager.courses)
         assertTrue(dataManager.courses.size > 1)
