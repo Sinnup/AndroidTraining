@@ -60,10 +60,9 @@ jobs:
           path: app/build/test-results
       # See https://circleci.com/docs/2.0/deployment-integrations/ for deploy examples
 
-  workflows:
-    version: 2
-    build_and_test:
-      jobs:
-        - test_lint
-        - test_unit
-        -
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - test_lint
+      - test_unit
