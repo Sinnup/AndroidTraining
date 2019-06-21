@@ -59,10 +59,12 @@ workflows:
   build_and_test:
     jobs:
       - test_lint:
-        branches:
-          only:
-            - dev
-      - test_unit
-        branches:
-          only:
-            - dev
+          filters:
+            branches:
+              only:
+                - dev
+      - test_unit:
+          filters:
+            branches:
+              only:
+                - dev
