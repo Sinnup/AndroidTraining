@@ -1,6 +1,5 @@
 package com.example.notekeeper2
 
-import android.util.Log
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -13,11 +12,8 @@ import org.junit.Assert.*
 
 class ExampleUnitTest {
 
-    private val TAG: String = this.javaClass.simpleName
-
     @Test
     fun addition_isCorrect() {
-        //Log.i(TAG, "addition_isCorrect")
         System.out.println("addition_isCorrect")
         assertEquals(4, 2 + 2)
 
