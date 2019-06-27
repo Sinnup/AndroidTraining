@@ -1,4 +1,4 @@
-package com.example.notekeeper2
+package com.example.notekeeper2.ui.activity
 
 import android.os.Bundle
 import android.util.Log
@@ -10,12 +10,14 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.android.volley.AuthFailureError
-import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.example.notekeeper2.CourseInfo
+import com.example.notekeeper2.DataManager
 import com.example.notekeeper2.Model.MainActivityObserver
 import com.example.notekeeper2.Model.MainActivityViewModel
+import com.example.notekeeper2.R
 import com.example.notekeeper2.Services.FakeUserResponse
 import com.example.notekeeper2.Services.FakeUserService
 
