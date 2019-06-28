@@ -60,6 +60,7 @@ class MainActivity : AppCompatActivity() {
 
 
         fab.setOnClickListener { view ->
+
             /*
             val originalValue = textDisplayedValue.text.toString().toInt()
             val newValue = originalValue * 2
