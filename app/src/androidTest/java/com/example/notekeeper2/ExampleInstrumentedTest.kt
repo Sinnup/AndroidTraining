@@ -8,9 +8,12 @@ import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
+import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.rule.ActivityTestRule
 import com.example.notekeeper2.ui.activity.MainActivity
+
 import org.hamcrest.core.IsNot.not
+import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
 
@@ -32,7 +35,7 @@ class ExampleInstrumentedTest {
 
     @get:Rule
     val activityRule = ActivityTestRule(MainActivity::class.java)
-    /*
+
         @Test
         fun useAppContext() {
             // Context of the app under test.
@@ -45,7 +48,7 @@ class ExampleInstrumentedTest {
             onView(withId( R.id.textNoteTitle )).perform(typeText(INPUT_STRING))
             onView(withId( R.id.textNoteTitle )).check(matches(withText(INPUT_STRING)))
         }
-    */
+
     @Test
     fun fabClickedAndResponse(){
         onView(withId( R.id.fab )).perform(click())
